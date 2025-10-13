@@ -8,7 +8,7 @@ protected:
     /** Le solde du compte bancaire */
     float solde;
 public:
-    CompteBancaire(const float _solde);
+    CompteBancaire(const float _solde=0.0);
     void deposer(const float _montant);
     bool retirer(const float _montant);
     float consulterSolde();

@@ -1,0 +1,15 @@
+<map id="menu.h" name="menu.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="233,5,299,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,60,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,32,74,80,73,75,232,27"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="85,79,159,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,33,159,75,157,70,242,28"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="183,79,255,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="261,32,237,69,232,66,256,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="279,79,346,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="276,30,300,66,295,69,271,32"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="370,79,437,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="289,28,370,70,368,75,287,33"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="461,79,514,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="300,27,448,75,447,80,298,32"/>
+</map>

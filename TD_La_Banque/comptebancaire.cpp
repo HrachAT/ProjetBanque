@@ -16,12 +16,20 @@ void CompteBancaire::deposer(const float _montant)
 
 bool CompteBancaire::retirer(const float _montant)
 {
-    bool retour = false;
-    if (solde >= _montant){
+    // bool retour = false;
+    // if (solde >= _montant){
+    //     solde -= _montant;
+    //     retour = true;
+    // }
+    // return retour;
+
+    bool ok=false;
+    if (_montant <= solde && _montant >= 0)
+    {
         solde -= _montant;
-        retour = true;
+        ok=true;
     }
-    return retour;
+    return ok;
 }
 
 float CompteBancaire::consulterSolde()
