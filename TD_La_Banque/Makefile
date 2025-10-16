@@ -53,14 +53,18 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = comptebancaire.cpp \
+		compteclient.cpp \
 		compteepargne.cpp \
 		main.cpp \
 		menu.cpp 
 OBJECTS       = comptebancaire.o \
+		compteclient.o \
 		compteepargne.o \
 		main.o \
 		menu.o
-DIST          = compteEpargne.txt \
+DIST          = compteBancaire.txt \
+		compteClient.txt \
+		compteEpargne.txt \
 		/opt/Qt/6.9.1/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt/6.9.1/gcc_64/mkspecs/common/unix.conf \
 		/opt/Qt/6.9.1/gcc_64/mkspecs/common/linux.conf \
@@ -365,8 +369,10 @@ DIST          = compteEpargne.txt \
 		/opt/Qt/6.9.1/gcc_64/mkspecs/features/yacc.prf \
 		/opt/Qt/6.9.1/gcc_64/mkspecs/features/lex.prf \
 		TD_La_Banque.pro comptebancaire.h \
+		compteclient.h \
 		compteepargne.h \
 		menu.h comptebancaire.cpp \
+		compteclient.cpp \
 		compteepargne.cpp \
 		main.cpp \
 		menu.cpp
@@ -1036,12 +1042,20 @@ compiler_clean:
 comptebancaire.o: comptebancaire.cpp comptebancaire.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o comptebancaire.o comptebancaire.cpp
 
+compteclient.o: compteclient.cpp compteclient.h \
+		comptebancaire.h \
+		compteepargne.h \
+		menu.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o compteclient.o compteclient.cpp
+
 compteepargne.o: compteepargne.cpp compteepargne.h \
 		comptebancaire.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o compteepargne.o compteepargne.cpp
 
 main.o: main.cpp menu.h \
-		comptebancaire.h
+		comptebancaire.h \
+		compteepargne.h \
+		compteclient.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 menu.o: menu.cpp menu.h

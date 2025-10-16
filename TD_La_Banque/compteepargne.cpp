@@ -12,6 +12,11 @@ float CompteEpargne::CalculerInterets()
     return calcul;
 }
 
+void CompteEpargne::CrediterInteret()
+{
+    solde+=CalculerInterets();
+}
+
 CompteEpargne::CompteEpargne(float _tauxInteret, float _solde) :
     CompteBancaire(_solde), tauxInteret(_tauxInteret)
 {

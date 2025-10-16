@@ -12,6 +12,7 @@ public:
 
     void ModifierTaux(float newTauxInteret);
     float CalculerInterets();
+    void CrediterInteret();
 };
 
 #endif // COMPTEEPARGNE_H
