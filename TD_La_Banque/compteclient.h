@@ -1,3 +1,11 @@
+/**
+    @file compteclient.cpp
+    @brief CompteClient
+    @version 1.0
+    @author Hrach ATOMYAN
+    @date 16/10/2025
+*/
+
 #ifndef COMPTECLIENT_H
 #define COMPTECLIENT_H
 #include "comptebancaire.h"

@@ -1,3 +1,11 @@
+/**
+    @file comptebancaire.cpp
+    @brief CompteBancaire
+    @version 1.0
+    @author Hrach ATOMYAN
+    @date 16/10/2025
+*/
+
 #ifndef COMPTEBANCAIRE_H
 #define COMPTEBANCAIRE_H
 

@@ -1,3 +1,11 @@
+/**
+    @file compteepargne.cpp
+    @brief CompteEpargne
+    @version 1.0
+    @author Hrach ATOMYAN
+    @date 16/10/2025
+*/
+
 #ifndef COMPTEEPARGNE_H
 #define COMPTEEPARGNE_H
 

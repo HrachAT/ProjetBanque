@@ -1,19 +1,27 @@
 #include "compteclient.h"
 
 using namespace std;
-
+/**
+ * @brief CompteClient::CompteClient
+ * @param _nom
+ * @param _numero
+ */
 CompteClient::CompteClient(const string &_nom, int _numero) :
     nom(_nom), numero(_numero), compteEpargne(nullptr)
 {
     compteBancaire = new CompteBancaire(0);
 }
-
+/**
+ * @brief CompteClient::~CompteClient
+ */
 CompteClient::~CompteClient()
 {
     delete compteBancaire;
     delete compteEpargne;
 }
-
+/**
+ * @brief CompteClient::OuvrirCompteEpargne
+ */
 void CompteClient::OuvrirCompteEpargne()
 {
     if (compteEpargne != nullptr)
@@ -32,7 +40,9 @@ void CompteClient::OuvrirCompteEpargne()
         cout << "Compte épargne ouvert avec succès" << endl;
     }
 }
-
+/**
+ * @brief CompteClient::GererCompteBancaire
+ */
 void CompteClient::GererCompteBancaire()
 {
     Menu monMenu("compteBancaire.txt");
@@ -62,7 +72,9 @@ void CompteClient::GererCompteBancaire()
         }
     }while(choix!=4);
 }
-
+/**
+ * @brief CompteClient::GererCompteEpargne
+ */
 void CompteClient::GererCompteEpargne()
 {
     Menu monMenu("compteEpargne.txt");

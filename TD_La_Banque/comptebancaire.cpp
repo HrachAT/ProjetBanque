@@ -1,19 +1,29 @@
 #include "comptebancaire.h"
 
-
+/**
+ * @brief CompteBancaire::CompteBancaire
+ * @param _solde
+ */
 CompteBancaire::CompteBancaire(const float _solde):
     solde(_solde)
 {
 
 }
-
+/**
+ * @brief CompteBancaire::deposer
+ * @param _montant
+ */
 void CompteBancaire::deposer(const float _montant)
 {
     if (_montant >= 0){
         solde+=_montant;
     }
 }
-
+/**
+ * @brief CompteBancaire::retirer
+ * @param _montant
+ * @return
+ */
 bool CompteBancaire::retirer(const float _montant)
 {
     // bool retour = false;
@@ -31,7 +41,10 @@ bool CompteBancaire::retirer(const float _montant)
     }
     return ok;
 }
-
+/**
+ * @brief CompteBancaire::consulterSolde
+ * @return
+ */
 float CompteBancaire::consulterSolde()
 {
     return solde;
