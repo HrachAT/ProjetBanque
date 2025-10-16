@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 17.0.0, 2025-10-16T09:51:03. -->
+<!-- Written by QtCreator 17.0.0, 2025-10-16T10:45:06. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -105,7 +105,7 @@
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
     <value type="int" key="EnableQmlDebugging">0</value>
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/USERS/ELEVES/CIEL2024/hatomyan/ProjetBanque/TD_La_Banque</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/home/USERS/ELEVES/CIEL2024/hatomyan/ProjetQT/TD_La_Banque/build/Desktop_Qt_6_9_1-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">/home/USERS/ELEVES/CIEL2024/hatomyan/ProjetBanque/TD_La_Banque</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>

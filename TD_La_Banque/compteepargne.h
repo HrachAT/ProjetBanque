@@ -8,7 +8,8 @@ class CompteEpargne : public CompteBancaire
 private:
     float tauxInteret;
 public:
-    CompteEpargne(float _tauxInteret=0.03, float _solde=0.0);
+    CompteEpargne(float tauxInteret);
+    CompteEpargne(float _solde=0.0, float _tauxInteret=0.03);
 
     void ModifierTaux(float newTauxInteret);
     float CalculerInterets();
